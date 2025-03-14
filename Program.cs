@@ -10,41 +10,36 @@ namespace proyecto
     {
         static void Main(string[] args)
 
-        {
-            // 1. Creación e inicialización del arreglo
-            int[] arreglo = new int[10]; // Crear un arreglo de 10 elementos
+        {//1.Creacion del arreglo
+            int[] arreglo = new int[10]; 
             for (int i = 0; i < arreglo.Length; i++)
             {
-                arreglo[i] = i + 1; // Inicializar con los números del 1 al 10
+                arreglo[i] = i + 1; 
             }
 
-            // Imprimir el arreglo completo
+            
             Console.WriteLine("Arreglo inicial:");
             foreach (int num in arreglo)
             {
                 Console.Write(num + " ");
             }
-            Console.WriteLine(); // Para nueva línea
+            Console.WriteLine(); 
 
             // 2. Modificación del tercer elemento
-            arreglo[2] = 99; // Cambiar el valor del tercer elemento (índice 2)
-
-            // Imprimir el arreglo después de la modificación
+            arreglo[2] = 99; 
             Console.WriteLine("Arreglo modificado:");
             foreach (int num in arreglo)
             {
                 Console.Write(num + " ");
             }
-            Console.WriteLine(); // Para nueva línea
+            Console.WriteLine();
 
             // 3. Suma de los elementos del arreglo
             int suma = 0;
             foreach (int num in arreglo)
             {
-                suma += num; // Sumar cada elemento
+                suma += num;
             }
-
-            // Imprimir la suma
             Console.WriteLine("La suma de tu arreglo es " + suma);
 
             // 4. Búsqueda de un número en el arreglo
@@ -52,7 +47,6 @@ namespace proyecto
             string input = Console.ReadLine();
             int numbus = Convert.ToInt32(input);
 
-            // Buscar el número en el arreglo
 
             for (int i = 0; i < arreglo.Length; i++)
             {
